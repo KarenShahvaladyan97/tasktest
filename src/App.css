@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.main {
+    padding: 32px 32px;
+    height: 100vh;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    width: 131px;
+    height: 36px;
+    background: #FFFEFB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: #B4B4B4 1px solid;
+    outline: none;
+    font-size: 12px;
+}
+
+
+.title {
+    width: 247px;
+    font-family: 'Source Sans Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #3F3F3F;
+}
+
+.content {
+    display: flex;
+}
+
+.addProduct {
+    width: 332px;
+    height: 440px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+
+.addProductFields {
+    padding: 24px;
+}
+
+.productTexts {
+    display: flex;
+}
+
+.productName {
+    font-family: 'Source Sans Pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #49485E;
+}
+
+.productNameStar {
+    color: red;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.addProductButton {
+    width: 284px;
+    height: 36px;
+    background: #FFFEFB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.addProductButtonText {
+    width: 93px;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: #B4B4B4;
+}
+
+
+@media screen and (max-width: 745px) {
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .topContent {
+        width: 332px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 16px 0;
+    }
+
+    .filterBtn {
+        width: 247px;
+        margin-top: 14px;
+    }
+
+    .content {
+        width: 332px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .productList {
+        width: 332px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
